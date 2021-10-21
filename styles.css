@@ -1,0 +1,134 @@
+/* "StAuth10244: I Allan Le, 000804364 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else." */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+    --first-color: #bebebe;
+    --second-color: #FFC2C2;
+    --white-color: #fff; 
+    --z-fixed: 100;
+    --text-color: #707070;
+    --font-medium: 500;
+
+    --body-font: 'Poppins', sans-serif;
+
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+}
+
+body{
+    background-color: #eff7fc;
+    font-family: var(--body-font);
+ 
+
+ 
+  }
+
+ul {
+    list-style: none;
+  }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  /* .mc-container{
+      
+  } */
+  
+
+@media screen and (max-width: 768px){
+    .nav__menu{
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      padding: 1.5rem 0 1rem;
+      text-align: center;
+      background-color: var(--body-color);
+      transition: .4s;
+      box-shadow: 0 4px 4px rgba(0,0,0,.1);
+      border-radius: 0 0 1rem 1rem;
+      z-index: var(--z-fixed);
+    }
+
+
+  }
+
+  .header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    z-index: var(--z-fixed);
+
+  }
+  .nav{
+    max-width: 1024px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .nav__toggle{
+    margin-right: 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+
+  .nav__list{
+    display: flex;
+
+  }
+
+  .nav__item{
+    margin-left: var(--mb-5);
+    margin-bottom: 0;
+  }
+
+  .nav__logo{
+      display: flex;
+      width: 3rem;
+  }
+
+
+  .nav__link, .nav__logo, .nav__toggle{
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+  }
+
+
+
+  #map {
+    height: 200px;
+    width: 500px;
+}
+
+
+
+
+
+  @media screen and (min-width: 960px){
+    .mc-container{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #map {
+      height: 700px;
+      width: 1400px;
+  }
+ 
+  }

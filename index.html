@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- "StAuth10244: I Allan Le, 000804364 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else." -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+
+        <a class="navbar-brand" href="#">
+            <img src="https://maps.google.com/mapfiles/kml/shapes/swimming.png" width="30" height="30"
+                class="d-inline-block align-top" alt="">
+            Oakville Water Facilities
+        </a>
+
+        <div class="d-flex flex-row-reverse">
+
+            <div class="p-2"><span class="font-weight-bold">Destination: </span> <span id="current-destination"
+                    class="font-weight-light"> N/A</span> </div>
+            <div class="p-2"><span class="font-weight-bold">Current Location: </span> <span id="current-location"
+                    class="font-weight-light"> N/A</span></div>
+        </div>
+    </nav>
+    <div class="d-flex ">
+        <div class="map-section">
+            <div id="map">
+            </div>
+        </div>
+
+        <div class="d-flex align-items-end flex-column">
+            <div class="p-2">
+                <h1 class="display-4 text-center mt-4">Welcome</h1>
+                <div class="container">
+                    <p>Looking for a pool to go to in Oakville?</p>
+                    <p>Look no further, simply choose your method of travel and click one of the pool icons to calculate
+                        your route!</p>
+
+                </div>
+               
+            </div>
+            <div class="d-flex mt-4 mr-4">
+                <div class="dropdown ml-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Travel Method
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" value="DRIVING" href="#">Driving</a>
+                        <a class="dropdown-item" value="BICYCLING" href="#">Biking</a>
+                        <a class="dropdown-item" value="WALKING" href="#">Walking</a>
+                    </div>
+                </div>
+                <div class="centerBlock">
+                    <div class="pl-2"><span class="font-weight-bold">Method of Travel: </span> <span
+                            id="travel-method"></span>
+                    </div><br />
+                    <div class="pl-2"><span class="font-weight-bold">It will take: </span> <span id="route-time"> 0
+                            mins</span>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="mt-auto p-2">
+
+
+                <div class="buttons-container">
+                    <button id="all" type="button" class="btn btn-outline-success mr-2">All</button>
+                    <button id="outdoor-pool" type="button" class="btn btn-outline-info mr-2">Outdoor Pools</button>
+                    <button id="indoor-pool" type="button" class="btn btn-outline-dark mr-2">Indoor Pools</button>
+                    <button id="splash-pad" type="button" class="btn btn-outline-warning mr-2">Splash Pads</button>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- <button id="all" value="Parking Lot">Show All</button>
+    <button id="outdoor-pool">Outdoor Pool</button>
+    <button id="indoor-pool">Indoor Pool</button> -->
+    <!-- <button id="splash-pad">Splash Pad</button> -->
+
+    <!-- <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#" value="DRIVING">Driving</a>
+            <a href="#" value="BIKING">Biking</a>
+            <a href="#" value="WALKING">Walking</a>
+        </div>
+    </div> -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbsua4EskTMpwMIvO5vkvTgw35rhCwTfs&callback=initMap">
+        </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

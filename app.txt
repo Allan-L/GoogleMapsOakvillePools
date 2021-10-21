@@ -1,0 +1,13 @@
+"StAuth10244: I Allan Le, 000804364 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else."
+
+
+*IMPORTANT NOTE - Hello, so I was developing this with the live server extension on vscode and it ran fine, but for whatever reason when i try to run this by clicking index.html there is an issue with
+geocoding. I did a google search and apparantly the API KEY that was provided needs the DIRECTIONS API to be enabled in the settings.
+
+*source - https://stackoverflow.com/questions/61310031/google-map-direction-request-denied
+
+-APP OVERVIEW-
+
+This app uses JSON data of Oakville recreation facilities, the UI allows the user to filter by different water facilities, and will get the users location on load.
+Once the user clicks their desired water facility they can see the route shown and the time it will take to get to the destination. 
+The user can also change the method of travel, and the map will update accordingly.
